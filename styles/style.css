@@ -1,0 +1,64 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main:first-child > img {
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover; /* обеспечивает, что картинка заполняет весь контейнер, сохраняя свои пропорции и обрезая излишки, чтобы избежать искажения. */
+    float: left;
+    margin: 10px;
+    border-radius: 15px;
+}
+.row{
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col50 {
+    width: 48%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+.col50:first-child{
+    margin-left: 0;
+}
+.col33 {
+    width: 30%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+.col33:first-child{
+    margin-left: 0;
+}
+.col25 {
+    width: 24%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+.col25:first-child{
+    margin-left: 0;
+}
+
+main:last-child{
+    width: 80%;
+    margin: 10px auto;
+}
+main:last-child > div{
+    float: right;
+    width: 35%;
+    color: coral;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+main:last-child > img{
+    width: 120%;
+    margin-left: -10%;
+}
